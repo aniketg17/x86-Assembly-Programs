@@ -36,7 +36,7 @@ main:                           #int main()
 while:                            #while (temp <= counter) {
 
     movq     $num , %rcx
-    movq     (%rcx) , %rcx        #int temp = num;
+    movq     (%rcx) , %rcx         #int temp = num;
 
     cmpq     -16(%rbp) , %rcx
     jle      afterw
